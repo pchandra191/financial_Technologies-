@@ -1,0 +1,59 @@
+<!-- Top Navigation Bar, 30 Jan'21 -->
+
+  <div class="navigation-wrap ">
+    <div class="container"
+    [className]="isActive ? 'navbar-inverse' : 'inactive'" >
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <!-- Company LOGO -->
+            <img class="m_icon" src="../assets/logo/logo.png" alt="Logo" />
+
+            <!-- Navigation Menu-->
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto py-4 py-md-0">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="#">Solutions</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+
+                <!-- Login, Started Buttons -->
+                <li>
+                  <button class="login_btn" mat-stroked-button color="primary">
+                    Login
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="started_btn"
+                    mat-stroked-button
+                    color="primary"
+                  >
+                    Get Started
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- End of nav -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+

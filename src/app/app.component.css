@@ -1,0 +1,437 @@
+/* Import Font from Google API */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+/* WHOLE WINDOW PAGE, Started on 29 Jan'21 */
+body {
+  font-family: Montserrat;
+  height: auto;
+
+}
+
+/* Background images, 31 Jan'21 */
+
+.bg {
+  width: auto;
+  height: auto;
+  background-image: url(../assets/background/blob-small.svg),
+    url(../assets/background/circle.svg),
+    url(../assets/background/accounting_dots.svg),
+    url(../assets/background/accounting_dots.svg),
+    url(../assets/background/sol_wave_bg.svg);
+  background-repeat: no-repeat;
+  background-size: 500px, 950px, 400px, 400px, 1600px;
+  background-position: -80px 200px, 810px -120px, 500px 730px, right 860px,
+    bottom center;
+}
+
+/* All buttons, 30,Jan'21 */
+button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* Imported Navigation bar, 'header.component', 30 Jan 21 */
+
+/* Fisrt Section, 29, Jan 21 */
+.section_one {
+  display: flex;
+  width: 100%;
+  padding: 240px 0px 0px 0px;
+}
+
+.section_one .body_img {
+  max-width: 100%;
+  border-radius: 13px;
+  box-shadow: 10px 10px black;
+  -webkit-box-shadow: 20px 10px 20px rgb(255, 255, 255);
+}
+
+hr {
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  width: 30%;
+  border-radius: 13px;
+  padding: 8px 10px 0px 0px;
+  margin-bottom: 60px;
+  margin-top: -10px;
+  margin-left: 55px;
+}
+
+.intro_text {
+  width: 80%;
+  font-size: 40px;
+  padding-left: 9%;
+}
+
+.intro_text2 {
+  flex-basis: 100%;
+  width: 100%;
+  font-size: 40px;
+  margin-top: -30px;
+  padding-left: 9%;
+}
+
+/* Responsive of Section One, 29 Jan, 21 */
+@media (max-width: 1200px) {
+  .section_one {
+    flex-direction: column;
+    margin-top: auto;
+    margin-top: 120px;
+  }
+  hr {
+    width: 35%;
+  }
+}
+
+/* Drag Function, 30 Jan 21 */
+.slider_points {
+  display: flex;
+  font-weight: 1px;
+  font-size: 10px;
+  color: #000000;
+  margin-top: -30px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.slider_points .end_points {
+  justify-content: flex-end;
+}
+
+.mat-label {
+  font-weight: 10;
+  font-size: 10px;
+  color: #000000;
+}
+.select_loop {
+  font-weight: bold;
+}
+
+/* Eligliblity Calculator, 29 Jan ,21 */
+mat-card mat-focus-indicator:disabled {
+  color: #000000;
+}
+
+.card {
+  border-radius: 13px;
+  display: flex;
+  margin-left: 200px;
+  width: 25%;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.myValue {
+  margin-bottom: -12px;
+  font-weight: 20px;
+  font-size: 20px;
+  font-style: initial;
+}
+
+.fonts_style {
+  color: #625f5f;
+  font-size: 12px;
+  color: #706a6a;
+  margin-bottom: 5px;
+}
+
+.heading_style {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.loans {
+  display: block;
+}
+
+.example-h2 {
+  font-weight: 10;
+  color: #625f5f;
+  font-size: 14px;
+  color: #706a6a;
+  display: flex;
+}
+
+.toggle_loans {
+  display: flex;
+  float: right;
+  margin-top: -45px;
+}
+
+/* Next Box , 29 Jan, 21 */
+
+.get_money {
+  border-top-right-radius: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 8px;
+  width: 13%;
+}
+
+.card_sec {
+  background-color: #663398;
+  width: auto;
+  height: 60%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+mat-card-title {
+  color: rgb(255, 255, 255);
+}
+
+.loan_amount {
+  color: white;
+  align-self: center;
+  font-weight: 30;
+  font-size: 14px;
+
+  justify-content: start;
+}
+
+.loan_title_amt {
+  color: #dacccc;
+  margin-top: -60px;
+}
+
+.loan_amt {
+  font-weight: 500;
+  margin-top: -15px;
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emi_amount {
+  color: white;
+  align-self: center;
+  font-weight: 30;
+  font-size: 14px;
+}
+
+.get_mon_btn {
+  background-color: white;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+
+.get_mon_btn:hover {
+  background-color: #663399;
+  color: rgb(255, 255, 255);
+  border-radius: 24px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    margin-left: 1px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card_sec {
+    margin-left: 1px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 18px;
+    width: auto;
+  }
+  .get_money {
+    width: 100%;
+  }
+}
+
+.loan_amount {
+  color: white;
+  align-self: center;
+  font-weight: 30;
+  font-size: 14px;
+  justify-content: start;
+}
+.emi_amount {
+  color: white;
+  align-self: center;
+  font-weight: 30;
+  font-size: 14px;
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: unset !important;
+}
+
+/* Card Section , Dated on 30th Jan'20 */
+.about {
+  padding-top: 263px;
+  display: flex;
+  padding-left: auto;
+}
+
+/* First border-left-width setting is a fallback, 30 Jan 21 */
+.card-custom-img:after {
+  position: inline;
+  left: 0;
+  width: 0;
+  height: 0;
+  float: auto;
+}
+
+.img-round {
+  margin: 30px 30px 1px 30px;
+}
+
+.card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: inline;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+}
+
+/* Opacity #2 */
+.about_cards {
+  border-radius: 30px;
+  background-color: white;
+  height: 253px;
+  width: 392px;
+  -webkit-box-shadow: 1px 1px 20px 1px rgb(206, 200, 200);
+}
+
+/* Hover Effect on cards, 30-01-21 */
+.hover12 figure .about_cards {
+  opacity: 100;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover12 figure:hover .about_cards {
+  opacity: 1;
+  background: rgb(176, 150, 210);
+}
+
+.hover12 figure:hover img {
+  opacity: 1;
+  background: rgb(102, 51, 153);
+}
+
+/*  Row Wise */
+.about_row1 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.about_row2 {
+  justify-content: center;
+  margin-top: 100px;
+  padding-right: 70px;
+}
+.card-title {
+  width: auto;
+  padding: 10px 10px 3px 10px;
+  font-weight: 599;
+}
+
+.card-text {
+  color: #999999;
+  font-size: 14px;
+  padding: 0px 10px 0px 10px;
+  margin-top: -15px;
+}
+
+.hover12 {
+  padding: 10px 10px;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .about_cards {
+    width: auto;
+  }
+}
+
+/* Final Section, 31 Jan,21 */
+
+.finsining {
+  padding: 210px 0px 50px 0px;
+  width: 100%;
+}
+
+.f_intro_text {
+  width: 100%;
+  font-size: 40px;
+}
+
+.f_intro_text2 {
+  flex-basis: 100%;
+  width: 100%;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+.f_hr {
+  background: rgb(112, 112, 112) 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  border-radius: 13px;
+  width: 28%;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: unset !important;
+}
+
+.f_text {
+  color: rgb(112, 112, 112);
+  font-weight: 10;
+  font-size: 18px;
+  width: 80%;
+  line-height: 22px;
+  margin-top: -35px;
+}
+
+.open_acc_btn {
+  background-color: transparent;
+  border-radius: 24px;
+  border-color: rgb(102, 51, 153);
+  color: #663399;
+  border-width: 2px;
+  margin-top: 81px;
+}
+
+.open_acc_btn:hover {
+  background-color: #663399;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1200px) {
+  .finishing {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
